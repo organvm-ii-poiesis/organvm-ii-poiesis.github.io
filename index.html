@@ -8,7 +8,6 @@
         :root { --primary: #0366d6; --bg: #f6f8fa; --text: #24292e; --border: #e1e4e8; --sidebar-bg: #ffffff; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text); margin: 0; display: flex; min-height: 100vh; background: var(--bg); }
         
-        /* Sidebar Styles */
         nav { width: 280px; background: var(--sidebar-bg); border-right: 1px solid var(--border); padding: 2rem 1.5rem; flex-shrink: 0; position: sticky; top: 0; height: 100vh; box-sizing: border-box; overflow-y: auto; }
         nav h2 { font-size: 0.75rem; color: #6a737d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1.5rem; padding-left: 0.75rem; }
         nav ul { list-style: none; padding: 0; margin: 0; }
@@ -17,19 +16,17 @@
         nav a:hover { background: #f1f8ff; color: var(--primary); }
         nav a.active { background: #f1f8ff; color: var(--primary); font-weight: 600; border-left: 3px solid var(--primary); border-radius: 0 6px 6px 0; }
 
-        /* Main Content Styles */
         main { flex-grow: 1; padding: 3rem 4rem; max-width: 1200px; }
         header { margin-bottom: 3rem; }
         header h1 { font-size: 2.2rem; font-weight: 800; margin: 0; color: #000; letter-spacing: -0.5px; }
         header p { color: #6a737d; font-size: 1.1rem; margin-top: 0.5rem; }
 
         .repo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; }
-        .repo-card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); display: flex; flex-direction: column; text-decoration: none; color: inherit; position: relative; }
+        .repo-card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); display: flex; flex-direction: column; text-decoration: none; color: inherit; }
         .repo-card:hover { transform: translateY(-5px); border-color: var(--primary); box-shadow: 0 15px 35px rgba(0,0,0,0.08); }
         .repo-name { color: var(--primary); font-size: 1.2rem; font-weight: 700; margin-bottom: 0.75rem; word-break: break-all; }
         .repo-desc { font-size: 0.95rem; color: #586069; line-height: 1.5; margin-bottom: 1.5rem; flex-grow: 1; }
-        .repo-footer { display: flex; align-items: center; justify-content: space-between; }
-        .tag { font-size: 0.65rem; background: #f1f8ff; color: var(--primary); padding: 3px 10px; border-radius: 20px; font-weight: 700; text-transform: uppercase; border: 1px solid #c8e1ff; }
+        .tag { font-size: 0.65rem; background: #f1f8ff; color: var(--primary); padding: 3px 10px; border-radius: 20px; font-weight: 700; text-transform: uppercase; border: 1px solid #c8e1ff; align-self: flex-start; }
 
         @media (max-width: 1000px) { main { padding: 2rem; } }
         @media (max-width: 800px) { body { flex-direction: column; } nav { width: 100%; height: auto; position: relative; border-right: none; border-bottom: 1px solid var(--border); padding: 1.5rem; } nav ul { display: flex; flex-wrap: wrap; gap: 0.5rem; } nav li { margin: 0; } }
@@ -53,133 +50,133 @@
     <main>
         <header>
             <h1>ORGAN-II (Poiesis)</h1>
-            <p>Integrated repository directory for the <strong>organvm-ii-poiesis</strong> collective.</p>
+            <p>Comprehensive repository directory for the <strong>organvm-ii-poiesis</strong> collective.</p>
         </header>
         <div class="repo-grid">
-            <a href="/.github/" class="repo-card">
+            <a href="https://github.com/organvm-ii-poiesis/.github" class="repo-card">
                 <span class="repo-name">.github</span>
                 <p class="repo-desc">Organization-wide community health files and CI templates.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/a-i-council--coliseum/" class="repo-card">
+            <a href="https://github.com/organvm-ii-poiesis/a-i-council--coliseum" class="repo-card">
                 <span class="repo-name">a-i-council--coliseum</span>
                 <p class="repo-desc">Decentralized live-streaming platform where AI agents debate with viewer crypto participation.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/a-mavs-olevm/" class="repo-card">
+            <a href="https://github.com/organvm-ii-poiesis/a-mavs-olevm" class="repo-card">
                 <span class="repo-name">a-mavs-olevm</span>
                 <p class="repo-desc">Personal artistic portfolio site (etceter4.com) — living temple of art, sound, and words.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/alchemical-synthesizer/" class="repo-card">
+            <a href="https://github.com/organvm-ii-poiesis/alchemical-synthesizer" class="repo-card">
                 <span class="repo-name">alchemical-synthesizer</span>
-                <p class="repo-desc">Systems and specifications for the organvm-ii-poiesis ecosystem.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <p class="repo-desc">Systems and core specifications for the organvm-ii-poiesis ecosystem.</p>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/archive-past-works/" class="repo-card">
+            <a href="https://github.com/organvm-ii-poiesis/archive-past-works" class="repo-card">
                 <span class="repo-name">archive-past-works</span>
                 <p class="repo-desc">Archival infrastructure for completed artworks with Dublin Core-inspired metadata, chronological index, and provenance tracking.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/art-from--auto-revision-epistemic-engine/" class="repo-card">
+            <a href="https://github.com/organvm-ii-poiesis/art-from--auto-revision-epistemic-engine" class="repo-card">
                 <span class="repo-name">art-from--auto-revision-epistemic-engine</span>
                 <p class="repo-desc">Interactive visualization of self-governing orchestration — governance as performance art.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/art-from--narratological-algorithmic-lenses/" class="repo-card">
+            <a href="https://github.com/organvm-ii-poiesis/art-from--narratological-algorithmic-lenses" class="repo-card">
                 <span class="repo-name">art-from--narratological-algorithmic-lenses</span>
                 <p class="repo-desc">Interactive web experience exploring narrative structures via visual algorithmic lenses.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/audio-synthesis-bridge/" class="repo-card">
+            <a href="https://github.com/organvm-ii-poiesis/audio-synthesis-bridge" class="repo-card">
                 <span class="repo-name">audio-synthesis-bridge</span>
                 <p class="repo-desc">TypeScript bridge for audio synthesis via OSC and WebAudio.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/case-studies-methodology/" class="repo-card">
+            <a href="https://github.com/organvm-ii-poiesis/case-studies-methodology" class="repo-card">
                 <span class="repo-name">case-studies-methodology</span>
                 <p class="repo-desc">Structured case studies documenting creative methodology — process documentation, comparative analysis, and grant-ready excerpts.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/chthon-oneiros/" class="repo-card">
+            <a href="https://github.com/organvm-ii-poiesis/chthon-oneiros" class="repo-card">
                 <span class="repo-name">chthon-oneiros</span>
                 <p class="repo-desc">CHTHON-ONEIROS — Underworld-dream: psychological horror theory corpus.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/client-sdk/" class="repo-card">
+            <a href="https://github.com/organvm-ii-poiesis/client-sdk" class="repo-card">
                 <span class="repo-name">client-sdk</span>
                 <p class="repo-desc">WebSocket client library for audience vote submission in Omni-Dromenon-Engine.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/example-ai-collaboration/" class="repo-card">
+            <a href="https://github.com/organvm-ii-poiesis/example-ai-collaboration" class="repo-card">
                 <span class="repo-name">example-ai-collaboration</span>
                 <p class="repo-desc">Human-AI co-creation framework: the AI-conductor model as artistic practice, with attribution tracking and process documentation.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/example-choreographic-interface/" class="repo-card">
+            <a href="https://github.com/organvm-ii-poiesis/example-choreographic-interface" class="repo-card">
                 <span class="repo-name">example-choreographic-interface</span>
                 <p class="repo-desc">Choreographic UI example.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/example-generative-music/" class="repo-card">
+            <a href="https://github.com/organvm-ii-poiesis/example-generative-music" class="repo-card">
                 <span class="repo-name">example-generative-music</span>
                 <p class="repo-desc">Generative music example.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/example-interactive-installation/" class="repo-card">
+            <a href="https://github.com/organvm-ii-poiesis/example-interactive-installation" class="repo-card">
                 <span class="repo-name">example-interactive-installation</span>
                 <p class="repo-desc">Reference implementation for sensor-driven interactive art installations with depth cameras, LIDAR, and spatial audio.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/example-theatre-dialogue/" class="repo-card">
+            <a href="https://github.com/organvm-ii-poiesis/example-theatre-dialogue" class="repo-card">
                 <span class="repo-name">example-theatre-dialogue</span>
                 <p class="repo-desc">Interactive theatre dialogue example with server and client.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/ivi374ivi027-05/" class="repo-card">
+            <a href="https://github.com/organvm-ii-poiesis/ivi374ivi027-05" class="repo-card">
                 <span class="repo-name">ivi374ivi027-05</span>
-                <p class="repo-desc">Systems and specifications for the organvm-ii-poiesis ecosystem.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <p class="repo-desc">Systems and core specifications for the organvm-ii-poiesis ecosystem.</p>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/krypto-velamen/" class="repo-card">
+            <a href="https://github.com/organvm-ii-poiesis/krypto-velamen" class="repo-card">
                 <span class="repo-name">krypto-velamen</span>
                 <p class="repo-desc">KRYPTO-VELAMEN — The hidden veil: queer theory and literary technique corpus.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/learning-resources/" class="repo-card">
+            <a href="https://github.com/organvm-ii-poiesis/learning-resources" class="repo-card">
                 <span class="repo-name">learning-resources</span>
                 <p class="repo-desc">Educational layer: workshop curricula, tiered learning paths, and creative coding tutorials for generative art and interactive performance.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/life-betterment-simulation/" class="repo-card">
+            <a href="https://github.com/organvm-ii-poiesis/life-betterment-simulation" class="repo-card">
                 <span class="repo-name">life-betterment-simulation</span>
                 <p class="repo-desc">Interactive simulation exploring social influence theory, dating dynamics, and personal growth through experiential narrative design.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/metasystem-master/" class="repo-card">
+            <a href="https://github.com/organvm-ii-poiesis/metasystem-master" class="repo-card">
                 <span class="repo-name">metasystem-master</span>
                 <p class="repo-desc">Omni-Dromenon Engine — canonical monorepo for ORGAN-II.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/organvm-ii-poiesis--superproject/" class="repo-card">
+            <a href="https://github.com/organvm-ii-poiesis/organvm-ii-poiesis--superproject" class="repo-card">
                 <span class="repo-name">organvm-ii-poiesis--superproject</span>
                 <p class="repo-desc">Superproject tracking submodules for organvm-ii-poiesis.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/shared-remembrance-gateway/" class="repo-card">
+            <a href="https://github.com/organvm-ii-poiesis/shared-remembrance-gateway" class="repo-card">
                 <span class="repo-name">shared-remembrance-gateway</span>
                 <p class="repo-desc">Hosting Home — privacy-first metaverse platform centering digital home as hub for life simulation, memorial spaces, and creator economy.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/showcase-portfolio/" class="repo-card">
+            <a href="https://github.com/organvm-ii-poiesis/showcase-portfolio" class="repo-card">
                 <span class="repo-name">showcase-portfolio</span>
                 <p class="repo-desc">Living portfolio aggregating all ORGAN-II generative art, interactive installations, and AI-human collaborative works.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/universal-waveform-explorer/" class="repo-card">
+            <a href="https://github.com/organvm-ii-poiesis/universal-waveform-explorer" class="repo-card">
                 <span class="repo-name">universal-waveform-explorer</span>
                 <p class="repo-desc">Aether Canvas — web-based 3D modular synthesizer reframing sound design as exploration of universal vibrations.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
         </div>
         <footer style="margin-top: 6rem; padding-top: 2rem; border-top: 1px solid var(--border); color: #999; font-size: 0.8rem; text-align: center;">
